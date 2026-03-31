@@ -33,6 +33,13 @@ function limparFormulario() {
     inputUf.value = '';
 }
 
+//funcao colocar informações dentro de um array
+const arrayDadosFormulario = [];
+function adicionarDadosFormulario() {
+    arrayDadosFormulario.push(dadosFormulario);
+    console.log(arrayDadosFormulario);
+}
+
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault()
